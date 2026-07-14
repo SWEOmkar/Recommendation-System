@@ -73,7 +73,7 @@ The following diagram outlines the modular architecture and data flow of the opt
 
 ### Architecture Flowchart (Mermaid)
 
-```mermaid
+```
 graph TD
     A[Raw Shipping Logs CSV] -->|Ingest & Clean| B[Preprocessor Module]
     B -->|Deduplicate & Cap Outliers| C[Feature Engineering]

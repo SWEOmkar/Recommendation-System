@@ -69,6 +69,10 @@ The optimization model is trained on a transactional dataset containing **10,194
 
 The following diagram outlines the modular architecture and data flow of the optimization platform:
 
+![System Architecture](Nassau-Candy-Factory-Optimization/images/architecture_diagram.png)
+
+### Architecture Flowchart (Mermaid)
+
 ```mermaid
 graph TD
     A[Raw Shipping Logs CSV] -->|Ingest & Clean| B[Preprocessor Module]

@@ -1,0 +1,454 @@
+/* custom.css - Nassau Candy Stitch UI Style Sheet */
+
+/* App Frame Backgrounds */
+.stApp {
+    background-color: #141619 !important;
+    color: #FFFFFF !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Sidebar Custom Styling */
+section[data-testid="stSidebar"] {
+    background-color: #0E1012 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Sidebar Navigation Items */
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #8A8A8A;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.nav-item.active {
+    color: #FFFFFF;
+    background-color: #20232A;
+    border-left: 4px solid #FF6B00;
+}
+
+/* Section Muted Headers */
+.sidebar-section-header {
+    color: #8A8A8A;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 1.5rem 0 0.75rem 0.5rem;
+}
+
+/* Page Header */
+.page-header-container {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.page-title {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+    color: #8A8A8A;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+/* Section Header */
+.section-header-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.section-subtitle {
+    color: #8A8A8A;
+    font-size: 0.85rem;
+    margin-top: 0.15rem;
+}
+
+/* KPI Cards Layout */
+.kpi-card {
+    background-color: #20232A;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 145px;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: help;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 107, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(255, 107, 0, 0.08);
+}
+
+.kpi-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.kpi-card-icon {
+    font-size: 1.1rem;
+}
+
+.kpi-card-label {
+    color: #8A8A8A;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.kpi-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.kpi-card-value {
+    color: #FFFFFF;
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+.kpi-card-sparkline {
+    opacity: 0.85;
+}
+
+.kpi-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    padding-top: 0.5rem;
+}
+
+.kpi-card-trend {
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.kpi-card-trend.up {
+    color: #10b981;
+}
+
+.kpi-card-trend.down {
+    color: #ef4444;
+}
+
+.kpi-card-trend.neutral {
+    color: #E5A93C;
+}
+
+.kpi-card-compare {
+    color: #8A8A8A;
+}
+
+/* Chart Container */
+.chart-container {
+    background-color: #20232A;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    transition: border-color 0.2s ease;
+}
+
+.chart-container:hover {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.chart-title {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+/* Executive Decision & Recommendation Cards */
+.rec-card {
+    background-color: #20232A;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.rec-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 107, 0, 0.25);
+}
+
+.rec-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.rec-card-route {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.rec-card-node {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #FFFFFF;
+}
+
+.rec-card-arrow {
+    color: #FF6B00;
+    font-weight: 800;
+}
+
+.rec-card-priority {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.rec-card-priority.high {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.rec-card-priority.medium {
+    background-color: rgba(229, 169, 60, 0.15);
+    color: #E5A93C;
+    border: 1px solid rgba(229, 169, 60, 0.3);
+}
+
+.rec-card-priority.low {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.rec-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rec-card-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.rec-card-stat-label {
+    color: #8A8A8A;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.15rem;
+}
+
+.rec-card-stat-val {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.rec-card-reason {
+    font-size: 0.85rem;
+    color: #D1D5DB;
+    line-height: 1.4;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #FF6B00;
+}
+
+/* User Info Box in Sidebar */
+.sidebar-user-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 2rem;
+}
+
+.sidebar-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #5C54A4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-username {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.sidebar-user-role {
+    font-size: 0.7rem;
+    color: #8A8A8A;
+}
+
+/* Custom Alert Containers */
+.stitch-alert {
+    background: rgba(229, 169, 60, 0.05);
+    border: 1px solid rgba(229, 169, 60, 0.2);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.stitch-alert-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.stitch-alert-content {
+    flex: 1;
+}
+
+.stitch-alert-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin-bottom: 0.25rem;
+}
+
+.stitch-alert-text {
+    font-size: 0.85rem;
+    color: #D1D5DB;
+    line-height: 1.4;
+}
+
+/* Footer Section */
+.footer-container {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #8A8A8A;
+    font-size: 0.8rem;
+}
+
+.footer-link {
+    color: #FF6B00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SaaS styled table for risk and capacities */
+.saas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #FFFFFF;
+}
+
+.saas-table th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    color: #8A8A8A;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.saas-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.saas-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.badge-safe {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 4px;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.badge-overload {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 4px;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}

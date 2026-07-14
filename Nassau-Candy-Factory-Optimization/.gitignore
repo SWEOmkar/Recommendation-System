@@ -1,0 +1,9 @@
+# Git ignore file
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+.ipynb_checkpoints/

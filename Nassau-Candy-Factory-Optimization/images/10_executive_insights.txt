@@ -1,0 +1,6 @@
+=== NASSAU CANDY KEY KPI SUMMARY ===
+Total Sales Revenue        : $141,783.63
+Total Gross Profit         : $93,442.80
+Average Gross Margin (%)   : 65.91%
+Average Shipping Lead Time : 1320.84 days
+Product Class Focus        : Chocolate represents 96.57% of order counts.

@@ -1,0 +1,198 @@
+Factory Reallocation & Shipping Optimization Recommendation System for Nassau Candy Distributor
+Detailed guide and project requirements for the Factory Reallocation & Shipping Optimization Recommendation System for Nassau Candy Distributor analysis.
+Background and Context:
+However, leadership ultimately needs: What should we change to improve performance? This project introduces decision intelligence that:
+• Predicts shipping outcomes under different configurations
+• Recommends which products should be reassigned to alternative factories
+• Balances shipping efficiency and profitability
+Unified MentorNassau Candy Distributor
+Problem Statement
+• Nassau Candy currently assigns products to factories using static rules and legacy processes. This leads to:
+- ● Suboptimal shipping distances
+- ● High lead times for certain regions
+- ● Margin erosion due to logistics inefficiencies
+• There is no system to:
+- ● Simulate factory–product reassignment scenarios
+- ● Quantify the operational impact before execution
+- ● Recommend optimal configurations at scale
+Dataset Fields Description:
+Field
+Description
+Row ID
+Unique row identifier
+Order ID
+Unique order identifier
+Order Date
+Date of order
+Ship Date
+Date of shipment
+Ship Mode
+Shipping method of order
+Customer ID
+Unique customer identifier
+Country/Region
+Country or region of customer
+City
+City of customer
+State/Province
+State/province of customer
+Postal Code
+Postal code / zip code of customer
+Division
+Product division
+Region
+Region of customer
+Product ID
+Unique product identifier
+Product Name
+Product long namer
+Sales
+Total sales value of order
+Units
+Total units of order
+Gross Profit
+Gross profit of order ( Sales - Cost )
+Cost
+Cost to manufacture
+Analytical Methodology (Step-by-Step)
+Data Preparation & Encoding
+• Normalize numerical features
+• Encode categorical variables (region, ship mode)
+• Remove extreme outliers
+• Create training-ready feature matrix
+Predictive Modeling Objective
+Predict expected shipping lead time given:
+• Product
+• Origin factory
+• Destination region
+• Ship mode
+• Models Used
+● Linear Regression (baseline)
+● Random Forest Regressor
+● Gradient Boosting Regressor
+Model Evaluation
+Best-performing model is selected based on accuracy + interpretability
+• RMSE - Penalize large errors
+• MAE - Average prediction error
+• R2 - Variance explained
+Route & Product Clustering
+• Cluster routes by performance similarity
+• Identify:
+○ Consistently slow routes
+○ Congested region-product combinations
+Scenario Simulation Engine
+For each product:
+• Simulate assignment to alternate factories
+• Predict new lead times
+• Estimate operational improvement
+• Measure profit sensitivity
+Optimization & Recommendation Logics
+• Rank factory options by:
+○ Lead time reduction
+○ Risk reduction
+○ Profit impact
+• Generate top-N factory reassignment recommendations
+Key Performance Indicators (KPIs)
+KPI
+Description
+Lead Time Reduction (%)
+Operational gain
+Profit Impact Stability
+Financial safety
+Scenario Confidence Score
+Reliability
+Recommendation Coverage
+Scalability
+Streamlit Web Application Requirements
+Dashboard Modules
+• Factory Optimization Simulator
+● Select product
+● View predicted performance across factories
+• What-If Scenario Analysis
+● Compare current vs recommended assignments
+● Visualize lead-time improvements
+• Recommendation Dashboard
+● Ranked reassignment suggestions
+● Expected efficiency gains
+• Risk & Impact Panel
+● Profit impact alerts
+● High-risk reassignment warnings
+User Capabilities
+• Product selector
+• Region selector
+• Ship mode filter
+• Optimization priority slider (speed vs profit)
+Deliverables and Submission
+• Research paper (EDA, insights, recommendations)
+• Streamlit dashboard (live analytics)
+• Executive summary for government stakeholders
+Conclusion
+This project elevates Nassau Candy Distributor from descriptive analytics to intelligent decision-making. By combining predictive modeling with optimization logic, it provides actionable factory reallocation recommendations that improve shipping efficiency without sacrificing profitability, making it fundamentally different in purpose, methodology, and business value.
+Factories Co-ordinates
+Factory
+Latitude
+Longitude
+Lot's O' Nuts
+32.881893
+-111.768036
+Wicked Choccy's
+32.076176
+-81.088371
+Sugar Shack
+48.11914
+-96.18115
+Secret Factory
+41.446333
+-90.565487
+The Other Factory
+35.1175
+-89.971107
+Products and Factories Correlation
+Division
+Product Name
+Factory
+Chocolate
+Wonka Bar - Nutty Crunch Surprise
+Lot's O' Nuts
+Chocolate
+Wonka Bar - Fudge Mallows
+Lot's O' Nuts
+Chocolate
+Wonka Bar -Scrumdiddlyumptious
+Lot's O' Nuts
+Chocolate
+Wonka Bar - Milk Chocolate
+Wicked Choccy's
+Chocolate
+Wonka Bar - Triple Dazzle Caramel
+Wicked Choccy's
+Sugar
+Laffy Taffy
+Sugar Shack
+Sugar
+SweeTARTS
+Sugar Shack
+Sugar
+Nerds
+Sugar Shack
+Sugar
+Fun Dip
+Sugar Shack
+Other
+Fizzy Lifting Drinks
+Sugar Shack
+Sugar
+Everlasting Gobstopper
+Secret Factory
+Sugar
+Hair Toffee
+The Other Factory
+Other
+Lickable Wallpaper
+Secret Factory
+Other
+Wonka Gum
+Secret Factory
+Other
+Kazookles
+The Other Factory
